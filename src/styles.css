@@ -1,0 +1,248 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+h1 {
+  color: #1e3a8a;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Form and Button Styles */
+h2 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3b82f6;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+/* Flex Layout for the Form and Table */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* Ensures the layout adjusts on smaller screens */
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-container,
+.table-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-container {
+  flex: 1; /* Allow the form to take up available space */
+  min-width: 45%; /* Minimum width to ensure it stays side-by-side */
+}
+
+.table-container {
+  flex: 1; /* Allow the table to take up available space */
+  min-width: 45%; /* Minimum width to ensure it stays side-by-side */
+}
+
+/* Form Styling */
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 768px) {
+  /* Adjusting Flexbox layout for smaller screens */
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container,
+  .table-container {
+    width: 100%; /* Full width on mobile */
+  }
+
+  /* Adjusting form padding */
+  form {
+    padding: 20px;
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  /* Adjust button and input sizes for smaller screens */
+  input,
+  textarea,
+  button {
+    font-size: 14px;
+  }
+}
+
+.maxi {
+  padding-top: 25px;
+}
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+.navbar .login-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #45a049;
+}
+
+/* Finance Page Styles */
+.finance-page {
+  padding: 20px;
+}
+
+.finance-page h2 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.financial-summary h3 {
+  color: #4CAF50;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
