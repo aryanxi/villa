@@ -10,7 +10,7 @@ function FinancePage() {
   useEffect(() => {
     // Fetching customer data from backend
     axios
-      .get("http://localhost:5001/customers")
+      .get("https://backend-23f7.onrender.com/customers")
       .then((response) => {
         const customerData = response.data;
         setCustomers(customerData);
