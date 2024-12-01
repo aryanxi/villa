@@ -7,14 +7,14 @@ const Advertisement = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/advertisements")
+      .get("https://backend-23f7.onrender.com/advertisements")
       .then((response) => setContent(response.data.content))
       .catch((error) => console.error(error));
   }, []);
 
   const updateContent = () => {
     axios
-      .put("http://localhost:5000/advertisements", { content })
+      .put("https://backend-23f7.onrender.com/advertisements", { content })
       .then(() => alert("Advertisement updated!"))
       .catch((error) => console.error(error));
   };
