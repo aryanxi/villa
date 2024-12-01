@@ -15,7 +15,7 @@ function Customers() {
   // Fetch customers from the backend
   useEffect(() => {
     axios
-      .get("http://localhost:5001/customers") // Update with your API endpoint
+      .get("https://backend-23f7.onrender.com/customers") // Update with your API endpoint
       .then((response) => setCustomers(response.data))
       .catch((error) => console.error("Error fetching customers:", error));
   }, []);
@@ -25,7 +25,7 @@ function Customers() {
     e.preventDefault(); // Prevent default form behavior
     try {
       // Send POST request to backend API to add customer
-      const response = await axios.post("http://localhost:5001/customers", {
+      const response = await axios.post("https://backend-23f7.onrender.com/customers", {
         name,
         birthdate,
         phone,
