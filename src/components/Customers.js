@@ -15,7 +15,7 @@ function Customers() {
   // Fetch customers from the backend
   useEffect(() => {
     axios
-      .get("https://backend-23f7.onrender.com/customers") // Update with your API endpoint
+      .get("https://backend-23f7.onrender.com/customers") // Update with your API
       .then((response) => setCustomers(response.data))
       .catch((error) => console.error("Error fetching customers:", error));
   }, []);
